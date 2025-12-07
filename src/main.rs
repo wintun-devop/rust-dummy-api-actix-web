@@ -2,6 +2,7 @@ use actix_web::{App, HttpServer};
 
 mod handlers;
 mod utils;
+mod config;
 
 
 #[actix_web::main]
