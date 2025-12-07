@@ -11,7 +11,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
         .configure(handlers::handler_config)
     })
-    .bind(("127.0.0.1", 8000))?
+    .bind((config::config().build_address, 8000))?
     .run()
     .await
 }
