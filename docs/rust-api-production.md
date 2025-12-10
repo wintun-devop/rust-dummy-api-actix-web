@@ -19,7 +19,7 @@ sudo vi /etc/systemd/system/rustapi.service
 ```
 ```
 [Unit]
-Description=Rust-Dummy-Api
+Description=ActixWebApi
 After=network.target
 
 [Service]
