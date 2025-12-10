@@ -23,12 +23,12 @@ Description=Rust-Dummy-Api
 After=network.target
 
 [Service]
-ExecStart=/home/ubuntu/rust-dummy-api/target/release/rust-dummy-api
-User=root
-Group=root
+ExecStart=/home/ubuntu/rust-dummy-api-actix-web/target/release/rust-dummy-api-actix-web
+User=ubuntu
+Group=ubuntu
 Restart=always
 Environment=RUST_LOG=info
-WorkingDirectory=/home/ubuntu/rust-dummy-api/target/release/
+WorkingDirectory=/home/ubuntu/rust-dummy-api-actix-web/target/release
 
 [Install]
 WantedBy=multi-user.target
